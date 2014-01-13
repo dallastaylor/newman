@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2DDE37E1-F9D1-4A32-B70F-E981687B2E00}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Newman</RootNamespace>
+    <AssemblyName>Newman</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="businesslogic, Version=1.0.5021.24868, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\businesslogic.dll</HintPath>
+    </Reference>
+    <Reference Include="cms, Version=1.0.5021.24868, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\cms.dll</HintPath>
+    </Reference>
+    <Reference Include="controls, Version=1.0.5021.24869, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\controls.dll</HintPath>
+    </Reference>
+    <Reference Include="interfaces, Version=1.0.5021.24867, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Nustache.Core">
+      <HintPath>..\packages\Nustache.1.13.8.22\lib\net20\Nustache.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="umbraco, Version=1.0.5021.24870, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\umbraco.dll</HintPath>
+    </Reference>
+    <Reference Include="Umbraco.Core, Version=1.0.5021.24867, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Umbraco.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Splashes\booting.aspx" />
+    <Content Include="Config\Splashes\noNodes.aspx" />
+    <Content Include="Css\Custom.css" />
+    <Content Include="Css\Starterkit.css" />
+    <Content Include="default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\bg_overlay.png" />
+    <Content Include="images\divider_full.jpg" />
+    <Content Include="images\divider_left_bottom.png" />
+    <Content Include="images\divider_left_top.jpg" />
+    <Content Include="images\divider_left_top.png" />
+    <Content Include="images\divider_right_top.jpg" />
+    <Content Include="images\header_bg.png" />
+    <Content Include="images\icons\dezinerfolio\info.png" />
+    <Content Include="images\icons\home.png" />
+    <Content Include="images\icons\home_dark.png" />
+    <Content Include="images\icons\link_tiny.gif" />
+    <Content Include="images\icons\mainmenu_itembg.png" />
+    <Content Include="images\icons\social_facebook.png" />
+    <Content Include="images\icons\social_linkedin.png" />
+    <Content Include="images\icons\social_su.png" />
+    <Content Include="images\icons\social_twitter.png" />
+    <Content Include="images\imageSliderImageBg.png" />
+    <Content Include="images\imageSliderNav.png" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\mainmenu_corner.gif" />
+    <Content Include="images\mainmenu_item_bottomshadow.jpg" />
+    <Content Include="images\tmp_img.jpg" />
+    <Content Include="images\tmp_img2.jpg" />
+    <Content Include="images\ui-btn-big-arrow.png" />
+    <Content Include="images\umedia_defaultimages\tmp_img.jpg" />
+    <Content Include="images\umedia_defaultimages\tmp_img2.jpg" />
+    <Content Include="images\umedia_defaultimages\tmp_img2_thumb.jpg" />
+    <Content Include="images\umedia_defaultimages\tmp_img_thumb.jpg" />
+    <Content Include="Masterpages\Umedia\skin.xml" />
+    <Content Include="Newman\Newman.Ui\Editor.ascx" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery.cycle.all.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Xslt\u.mediaSliderImages.xslt" />
+    <Content Include="Xslt\umb2ndLevelNavigation.xslt" />
+    <Content Include="Xslt\umbTopNavigation.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Newman\Api\EmailSender.cs" />
+    <Compile Include="Newman\Model\Data.cs" />
+    <Compile Include="Newman\Model\Email.cs" />
+    <Compile Include="Newman\Newman.Ui\Editor.ascx.cs">
+      <DependentUpon>Editor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Newman\Newman.Ui\Editor.ascx.designer.cs">
+      <DependentUpon>Editor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Newman\Trees\LoadNewman.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\404handlers.config" />
+    <Content Include="Config\applications.config" />
+    <Content Include="Config\BaseRestExtensions.config" />
+    <Content Include="Config\ClientDependency.config" />
+    <Content Include="Config\Dashboard.config" />
+    <Content Include="Config\EmbeddedMedia.config" />
+    <Content Include="Config\ExamineIndex.config" />
+    <Content Include="Config\ExamineSettings.config" />
+    <Content Include="Config\feedProxy.config" />
+    <Content Include="Config\FileSystemProviders.config" />
+    <Content Include="Config\log4net.config" />
+    <Content Include="Config\metablogConfig.config" />
+    <Content Include="Config\restExtensions.config" />
+    <Content Include="Config\scripting.config" />
+    <Content Include="Config\Skinning.config" />
+    <Content Include="Config\tinyMceConfig.config" />
+    <Content Include="Config\trees.config" />
+    <Content Include="Config\umbracoSettings.config" />
+    <Content Include="Config\UrlRewriting.config" />
+    <Content Include="Config\xsltExtensions.config" />
+    <Content Include="Masterpages\umbBlogDatefolder.master" />
+    <Content Include="Masterpages\umbBlogpost.master" />
+    <Content Include="Masterpages\umbBusinessHomepage.master" />
+    <Content Include="Masterpages\umbHomepage.master" />
+    <Content Include="Masterpages\umbMaster.master" />
+    <Content Include="Masterpages\umbNews.master" />
+    <Content Include="Masterpages\umbNewsArticle.master" />
+    <Content Include="Masterpages\umbTextpage.master" />
+    <Content Include="Masterpages\Umedia\backup\umbHomepage.master" />
+    <Content Include="Masterpages\Umedia\backup\umbMaster.master" />
+    <Content Include="Masterpages\Umedia\backup\umbTextpage.master" />
+    <Content Include="Masterpages\Umedia\umbBlogDatefolder.master" />
+    <Content Include="Masterpages\Umedia\umbBlogpost.master" />
+    <Content Include="Masterpages\Umedia\umbBusinessHomepage.master" />
+    <Content Include="Masterpages\Umedia\umbHomepage.master" />
+    <Content Include="Masterpages\Umedia\umbMaster.master" />
+    <Content Include="Masterpages\Umedia\umbNews.master" />
+    <Content Include="Masterpages\Umedia\umbNewsArticle.master" />
+    <Content Include="Masterpages\Umedia\umbTextpage.master" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config.transform" />
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Xslt\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="App_Plugins\" />
+    <Folder Include="MacroScripts\" />
+    <Folder Include="UserControls\" />
+    <Folder Include="Views\MacroPartials\" />
+    <Folder Include="Views\Partials\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49574/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
